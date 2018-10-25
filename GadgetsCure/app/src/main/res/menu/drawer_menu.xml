@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<group android:id="@+id/group1">
+
+    <item android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"
+        />
+
+    <item  android:id="@+id/acc"
+        android:title="My Account"
+        android:icon="@drawable/ic_account"
+
+        />
+
+
+    <item android:title="Application">
+        <menu>
+            <item android:id="@+id/history"
+                android:title="Bookings"
+                android:icon="@drawable/ic_bookings"/>
+
+            <item
+                android:id="@+id/callbook"
+                android:icon="@drawable/ic_callbook"
+                android:title="Call to Book" />
+        </menu>
+    </item>
+
+    <item android:title="Communication">
+        <menu>
+
+            <item android:id="@+id/contact"
+                android:title="Call Us"
+                android:icon="@drawable/conatct"/>
+
+            <item android:id="@+id/contact_email"
+                android:title="Mail Us"
+                android:icon="@drawable/ic_email"/>
+
+
+
+        </menu>
+    </item>
+
+
+    <item android:title="Miscellaneous"
+        >
+        <menu>
+
+
+               <item android:id="@+id/rate"
+                android:title="Rate Us"
+                android:icon="@drawable/rate"/>
+
+
+
+        </menu>
+
+
+    </item>
+
+
+
+
+    <item
+        android:id="@+id/sign_out"
+        android:title="Log Out"
+        android:icon="@drawable/logout"/>
+
+
+    <!-- app:showAsAction="never" -->
+
+</group>
+
+
+</menu>

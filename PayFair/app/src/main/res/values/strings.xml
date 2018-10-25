@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pay Fair</string>
+    <string name="google_maps_key">AIzaSyDBjK_xom_9U2Lvx6dmwGdPNPYMIeeyJGM</string>
+    <string-array name="bustype">
+        <item>Ordinary</item>
+        <item>Metro Express</item>
+        <item>Metro Deluxe</item>
+
+    </string-array>
+</resources>

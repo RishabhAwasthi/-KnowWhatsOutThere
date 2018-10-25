@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gadgetscure.gadgetscure.activities.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:title="Gadgets Cure"
+        />
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/drawer"
+        android:layout_below="@+id/tool_bar">
+
+
+            <FrameLayout
+                android:id="@+id/acframe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                />
+
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+            android:id="@+id/lin"
+                >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+
+<RelativeLayout
+    android:id="@+id/frame"
+    android:layout_width="match_parent"
+    android:layout_height="235dp"
+    android:background="#616161"
+
+    >
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220dp">
+                    </android.support.v4.view.ViewPager>
+
+    <android.support.design.widget.TabLayout
+        android:background="@color/white"
+       android:paddingTop="2dp"
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        app:tabBackground="@drawable/tab_selector"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp"
+        android:layout_below="@+id/pager"/>
+
+</RelativeLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/frame"
+                    android:nestedScrollingEnabled="false"
+                    />
+            </RelativeLayout>
+            </ScrollView>
+
+
+
+        <android.support.design.widget.NavigationView
+            app:headerLayout="@layout/header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:menu="@menu/drawer_menu"
+            android:layout_gravity="start"
+            android:id="@+id/nav">
+
+        </android.support.design.widget.NavigationView>
+
+
+
+
+
+
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:background="@drawable/edittext"
+    android:backgroundTint="#96303030"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Description "
+
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:textSize="28dp"
+        android:id="@+id/sure"/>
+    <EditText
+        android:background="@drawable/edittext"
+
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:id="@+id/des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sure" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/des"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <Button
+
+                android:id="@+id/add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#CC303030"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:text="ADD"
+                />
+
+            <Button
+
+                android:id="@+id/no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#CC303030"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text="CANCEL"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
